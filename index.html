@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение планет</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header> <img src="img/header.png" alt="logo" ></header>
+    <div class="star-field"></div>
+    <!-- <div class="planet-light"></div> -->
+    <!-- <div class="solar-system">
+        <div class="sun">
+            <img src="img/sun.png" alt="Солнце">
+        </div>
+        <div class="orbit-line"></div>
+        <div class="planet planet1" id="planet1-position">
+            <img src="" alt="Планета 1">
+        </div>
+        <div class="planet planet2" id="planet2-position">
+            <img src="" alt="Планета 2">
+        </div>
+    </div> -->
+    <div class="content">
+        <div class="selectors">
+            <label class="select">
+                <div class="select__control" id="planet1" onclick="toggleDropdown('planet1')">
+                    <div><span class="selected-option">Выберите первую планету</span></div>
+                    <div class="select__icon"><img src="img/chevron.png" alt=""></div>
+                </div>
+                <div class="dropdown" id="dropdown-planet1">
+                    <div class="option" data-value="меркурий">Меркурий</div>
+                    <div class="option" data-value="венерар">Венера</div>
+                    <div class="option" data-value="земля">Земля</div>
+                    <div class="option" data-value="марс">Марс</div>
+                    <div class="option" data-value="юпитер">Юпитер</div>
+                    <div class="option" data-value="сатурн">Сатурн</div>
+                    <div class="option" data-value="уран">Уран</div>
+                    <div class="option" data-value="нептун">Нептун</div>
+                </div>
+            </label>
+            <p class="p-vs">VS</p>
+            <label class="select">
+                <div class="select__control" id="planet2" onclick="toggleDropdown('planet2')">
+                    <div><span class="selected-option">Выберите вторую планету</span></div>
+                    <div class="select__icon"><img src="img/chevron.png" alt=""></div>
+                </div>
+                <div class="dropdown" id="dropdown-planet2">
+                    <div class="option" data-value="меркурий">Меркурий</div>
+                    <div class="option" data-value="венерар">Венера</div>
+                    <div class="option" data-value="земля">Земля</div>
+                    <div class="option" data-value="марс">Марс</div>
+                    <div class="option" data-value="юпитер">Юпитер</div>
+                    <div class="option" data-value="сатурн">Сатурн</div>
+                    <div class="option" data-value="уран">Уран</div>
+                    <div class="option" data-value="нептун">Нептун</div>
+                </div>
+            </label>
+        </div>
+        <div class="characteristic">
+            <div class="characteristic_block" id="orbitComparison">
+                <p class="characteristic_name">Диаметр, км</p>
+                <p class="characteristic_description">Расстояние между противоположными точками экватора</p>
+                <div class="characteristic_contrast">
+                    <div class="diameter">
+                        <img id="img-diameter1">
+                        <p id="diameter1"></p>
+                    </div>
+                    <img id="diameter-contrast" >
+                    <div class="diameter">
+                        <img id="img-diameter2">
+                        <p id="diameter2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="characteristic_block" id="massComparison">
+                <p class="characteristic_name">Производительность, сезоны</p>
+                <p class="characteristic_description"> сколько серий "Друзей" можно посмотреть за один день на планете</p>
+                <div class="characteristic_contrast">
+                    <div id="weight-container">
+                        <div id="friends1-container">
+                        </div>
+                        <p id="friends1"></p>
+                    </div>
+                    <img id="friends-contrast">
+                    <div id="weight-container">
+                        <div id="friends2-container">
+                        </div>
+                        <p id="friends2"></p>
+                    </div>
+                </div>
+            </div> 
+            <div class="characteristic_block" id="massComparison">
+                <p class="characteristic_name">Масса</p>
+                <p class="characteristic_description">Относительная масса планеты в массах Земли</p>
+                <div class="characteristic_contrast">
+                    <div id="weight-container">
+                        <div id="weight1-container">
+
+                        </div>
+                        <p id="weight1"></p>
+                    </div>
+                    <img id="weight-contrast">
+                    <div id="weight-container">
+                        <div id="weight2-container">
+
+                        </div>
+                        <p id="weight2"></p>
+                    </div>
+                </div>
+            </div> 
+            
+            
+            <div class="characteristic_block" id="orbitComparison">
+                <p class="characteristic_name">Орбита, млн км</p>
+                <p class="characteristic_description">Среднее расстояние от центра планеты до Солнца</p>
+                <div class="characteristic_contrast">
+                    <p id="orbit1"></p>
+                    <img id="orbit-contrast" >
+                    <p id="orbit2"></p>
+                </div>
+            </div>
+
+            <div class="characteristic_block" id="yearComparison">
+                <p class="characteristic_name">Год, суток</p>
+                <p class="characteristic_description">Время полного оборота вокруг Солнца в земных сутках</p>
+                <div class="characteristic_contrast">
+                    <p id="year1"></p>
+                    <img id="year-contrast" >
+                    <p id="year2"></p>
+                </div>
+            </div>
+            <div class="characteristic_block" id="temperatureComparison">
+                <p class="characteristic_name">Температура, °C</p>
+                <p class="characteristic_description">на поверхности или в верхних слоях атмосферы</p>
+                <div class="characteristic_contrast">
+                    <p id="temperature1"></p>
+                    <img id="temperature-contrast">
+                    <p id="temperature2"></p>
+                </div>
+            </div>
+        </div>
+        <div class="characteristic_block" id="massComparison">
+            <p class="characteristic_name">Спутники</p>
+            <p class="characteristic_description">Количество естественных спутников на орбите</p>
+            <div class="characteristic_contrast">
+                <div id="weight-container">
+                    <div id="satellite1-container">
+
+                    </div>
+                    <p id="satellite1"></p>
+                </div>
+                <img id="satellite-contrast">
+                <div id="weight-container">
+                    <div id="satellite2-container">
+
+                    </div>
+                    <p id="satellite2"></p>
+                </div>
+            </div>
+        </div>  
+
+    </div>
+    <div class="solar-system">
+        <div class="sun">
+            <img src="img/sun.png" alt="Солнце">
+        </div>
+        <div class="orbit-line"></div>
+        <div class="planet planet1" id="planet1-position">
+            <img >
+        </div>
+        <div class="planet planet2" id="planet2-position">
+            <img>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
