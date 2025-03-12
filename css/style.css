@@ -110,16 +110,16 @@ body {
     padding: 20px;
 }
 
-/* Основные стили для контейнера выпадающего списка */
+
 .select {
     position: relative;
     display: inline-block;
     max-width: 300px;
     width: 100%;
-    margin: 10px; /* Отступы между списками */
+    margin: 10px; 
 }
 
-/* Стили для выбранного элемента */
+
 .select__control {
     background-color: #000;
     color: #fff;
@@ -149,9 +149,9 @@ body {
     align-items: center;
 }
 .selected::before {
-    content: url('../img/chevron-active.png'); /* Путь к картинке */
-    width: 16px; /* Ширина картинки */
-    height: 16px; /* Высота картинки */
+    content: url('../img/chevron-active.png'); 
+    width: 16px;
+    height: 16px;
 }
 
 
@@ -163,52 +163,52 @@ body {
     box-sizing: border-box;
 }
 
-/* Иконка стрелки */
+
 .select__icon img {
     width: 16px;
     height: 16px;
-    transition: transform 0.3s ease; /* Анимация для стрелки */
+    transition: transform 0.3s ease; 
 }
 
 
 
-/* Стили для выпадающего списка */
+
 .dropdown {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(27, 27, 27); /* Фон списка */
-    border: 1px solid rgba(252, 179, 3, 0.5); /* Граница */
+    background: rgba(27, 27, 27); 
+    border: 1px solid rgba(252, 179, 3, 0.5); 
     border-top: none;
     border-radius: 0 0 5px 5px;
-    display: none; /* Скрываем по умолчанию */
-    z-index: 10; /* Чтобы список был поверх других элементов */
+    display: none; 
+    z-index: 10; 
 }
 
-/* Стили для option */
+
 .option {
     padding: 10px;
-    color: rgba(129, 176, 183, 1); /* Цвет текста */
+    color: rgba(129, 176, 183, 1); 
     cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease; /* Анимация */
+    transition: background 0.3s ease, color 0.3s ease; 
     font-family: "PxPlus ToshibaSat 8x14";
     display: flex;
 }
 
-/* При наведении на option */
+
 .option:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-/* Открытый список */
+
 .select.open .dropdown {
-    display: block; /* Показываем список */
+    display: block; 
 }
 
-/* Анимация стрелки при открытии списка */
+
 .select.open .select__icon img {
-    transform: rotate(180deg); /* Поворачиваем стрелку */
+    transform: rotate(180deg); 
 }
 
 
@@ -221,7 +221,7 @@ body {
     color: rgba(129, 176, 183, 1);
     font-family: "PxPlus ToshibaSat 8x14";
     font-size: 20px;
-    white-space: pre-line; /* Сохраняем переносы строк */
+    white-space: pre-line;
 }
 
 .results p {
@@ -285,32 +285,6 @@ body {
     text-align: center;
 }
 
-/* .characteristic_contrast{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 30px;
-}
-
-
-
-
-.diameter{
-    max-width: 300px;
-    width: 100%;
-}
-
-
-.diameter-less{
-    width: 42px;
-}
-
-.diameter-more{
-    width: 300px;
-} */
-
-
 
 .characteristic_contrast p{
     font-family: "PxPlus ToshibaSat 8x14";
@@ -324,8 +298,8 @@ body {
 }
 .characteristic_contrast {
     display: flex;
-    justify-content: center; /* Выравниваем элементы по центру по горизонтали */
-    gap: 100px; /* Расстояние между элементами */
+    justify-content: center;
+    gap: 100px; 
     position: relative;
 }
 
@@ -342,28 +316,23 @@ body {
 }
 
 .diameter-less {
-    width: 42px; /* Размер меньшей планеты */
+    width: 42px; 
     height: 42px;
     margin: 150px 0;
 }
 
 .diameter-more {
-    width: 300px; /* Размер большей планеты */
+    width: 300px;
     height: 300px;
 }
 
 
 #diameter{
-    margin-top: 10px; /* Отступ текста от картинки */
+    margin-top: 10px; 
     font-size: 16px;
     color: white;
 }
 
-
-/* 
-.weight-size {
-    width: 15px;
-} */
 
 
 

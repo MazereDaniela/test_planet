@@ -36,93 +36,93 @@ const planetData = {
         orbit: 57.9, // Орбита, млн км
         year: 88, // Год, суток
         temperature: 167, // Температура, °C
-        image: "img/Mercury.png",
-        position: 39,
+        image: "img/Mercury.png", // Изображение планеты
+        position: 39, // Позиция
         day: 1406.4 , // Продолжительность дня, часы
     },
     венера: {
-        area: 460.2, // площадь в млн км²
-        diameter: 12104, // Диаметр, км
-        mass: 0.815, // Масса (в массах Земли)
-        satellites: 0, // Спутники
-        orbit: 108.2, // Орбита, млн км
-        year: 225, // Год, суток
-        temperature: 464, // Температура, °C
+        area: 460.2,
+        diameter: 12104,
+        mass: 0.815,
+        satellites: 0,
+        orbit: 108.2,
+        year: 225, 
+        temperature: 464,
         image: "img/Venus.png",
         position: 45,
-        day: 5832, // Продолжительность дня, часы
+        day: 5832,
     },
     земля: {
-        area: 510.1, // площадь в млн км²
-        diameter: 12742, // Диаметр, км
-        mass: 1, // Масса (в массах Земли)
-        satellites: 1, // Спутники
-        orbit: 149.6, // Орбита, млн км
-        year: 365.25, // Год, суток
-        temperature: 15, // Температура, °C
+        area: 510.1, 
+        diameter: 12742, 
+        mass: 1, 
+        satellites: 1, 
+        orbit: 149.6, 
+        year: 365.25, 
+        temperature: 15, 
         image: "img/Earth.png",
         position: 51,
-        day: 24, // Продолжительность дня, часы 
+        day: 24, 
     },
     марс: {
-        area: 144.8, // площадь в млн км²
-        diameter: 6779, // Диаметр, км
-        mass: 0.107, // Масса (в массах Земли)
-        satellites: 2, // Спутники
-        orbit: 227.9, // Орбита, млн км
-        year: 687, // Год, суток
-        temperature: -63, // Температура, °C
+        area: 144.8, 
+        diameter: 6779, 
+        mass: 0.107, 
+        satellites: 2, 
+        orbit: 227.9, 
+        year: 687, 
+        temperature: -63, 
         image: "img/Mars.png",
         position: 58,
-        day: 24.6, // Продолжительность дня, часы
+        day: 24.6, 
     },
     юпитер: {
-        area: 618.3, // площадь в млн км²
-        diameter: 139820, // Диаметр, км
-        mass: 317.8, // Масса (в массах Земли)
-        satellites: 79, // Спутники
-        orbit: 778.5, // Орбита, млн км
-        year: 4332, // Год, суток
-        temperature: -145, // Температура, °C
+        area: 618.3, 
+        diameter: 139820, 
+        mass: 317.8, 
+        satellites: 79, 
+        orbit: 778.5, 
+        year: 4332, 
+        temperature: -145, 
         image: "img/Jupiter.png",
         position: 65,
-        day: 9.84 , // Продолжительность дня, часы 
+        day: 9.84 , 
     },
     сатурн: {
-        area: 427.0, // площадь в млн км²
-        diameter: 116460, // Диаметр, км
-        mass: 95.2, // Масса (в массах Земли)
-        satellites: 83, // Спутники
-        orbit: 1433.5, // Орбита, млн км
-        year: 10759, // Год, суток
-        temperature: -178, // Температура, °C
+        area: 427.0, 
+        diameter: 116460, 
+        mass: 95.2, 
+        satellites: 83, 
+        orbit: 1433.5, 
+        year: 10759, 
+        temperature: -178, 
         image: "img/Saturn.png",
         position: 75,
-        day: 10.8, // Продолжительность дня, часы 
+        day: 10.8, 
     },
     уран: {
-        area: 808.3, // площадь в млн км²
-        diameter: 50724, // Диаметр, км
-        mass: 14.5, // Масса (в массах Земли)
-        satellites: 27, // Спутники
-        orbit: 2872.5, // Орбита, млн км
-        year: 30687, // Год, суток
-        temperature: -216, // Температура, °C
+        area: 808.3, 
+        diameter: 50724, 
+        mass: 14.5, 
+        satellites: 27, 
+        orbit: 2872.5, 
+        year: 30687, 
+        temperature: -216, 
         image: "img/Uranus.png",
         position: 85,
-        day: 17.28, // Продолжительность дня, часы
+        day: 17.28, 
     },
     нептун: {
-        area: 761.8, // площадь в млн км²
-        diameter: 49244, // Диаметр, км
-        mass: 17.1, // Масса (в массах Земли)
-        satellites: 14, // Спутники
-        orbit: 4495.1, // Орбита, млн км
-        year: 60190, // Год, суток
-        temperature: -214, // Температура, °C
+        area: 761.8, 
+        diameter: 49244, 
+        mass: 17.1,
+        satellites: 14,
+        orbit: 4495.1,
+        year: 60190,
+        temperature: -214,
         image: "img/Neptune.png",
         position: 96,
-        day: 16.08, // Продолжительность дня, часы
+        day: 16.08, 
     }
 };
 
@@ -141,8 +141,6 @@ function comparePlanets() {
         const img1 = planetData[planet1].image;
         const img2 = planetData[planet2].image;
 
-
-
         const weight1 = planetData[planet1].mass;
         const weight2 = planetData[planet2].mass;
 
@@ -157,7 +155,6 @@ function comparePlanets() {
 
         const temperature1 = planetData[planet1].temperature;
         const temperature2 = planetData[planet2].temperature;
-
 
 
         const friends1 = Math.trunc(planetData[planet1].day / (0.37 * 24));
